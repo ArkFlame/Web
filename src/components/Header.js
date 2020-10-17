@@ -18,6 +18,7 @@ export default class Header extends Component {
                         <li><Link to="/">Inicio</Link></li>
                         <li><a href="https://discord.gg/f43hmer">Discord</a></li>
                         <li><a href="https://twitter.com/arkflamenetwork/">Twitter</a></li>
+                        <li><Link to="/tienda">Tienda</Link></li>
                     </ul>
                 </nav>
               </div>
