@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.post {
+	font-family: sans-serif, Roboto;
+	background: #fff;
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 8px 0 rgba(0, 0, 0, .19);
+	margin: 50px auto 0;
+  border-radius: 10px;
+}
+
+.pfp {
+	width: 32px;
+	height: 32px;
+	border-radius: 20px;
+}
+
+
+.post h1 {
+	padding-top: 1%;
+	padding-left: 1%;
+	border-bottom: 2px solid #ccc
+}
+
+.post .escrito {
+	padding: 20px;
+	font-size: 14px;
+  	align-items: left;
+}
+
+.post a {
+	color: #be3d3d
+}
+
+.post .contenido {
+	padding: 20px;
+	font-size: 16px;
+	text-align: left
+}
+
+.post .contenido img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}

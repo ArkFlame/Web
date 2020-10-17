@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.desc-title2 {
+    text-align: center;
+    color: #000;
+    z-index: 999;
+
+    padding: 100px 30px;
+}
+
+.desc-title3 {
+      color: inherit;
+      text-align: inherit;
+      margin: 0;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+      line-height: 1.01em;
+      letter-spacing: -.049375rem;
+      font-size: 5rem;
+      font-weight: 700;
+      text-transform: none;
+}
+
+.desc-subtitle2 {
+    text-align: inherit;
+    padding-top: 20px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 2rem;
+    letter-spacing: .0125em;
+    text-decoration: inherit;
+    text-transform: inherit;
+}
+
+@media screen and (max-width: 1200px){
+    .desc-title3 {
+      font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .desc-title3 {
+      font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .desc-title3 {
+      font-size: 2.6rem;
+    }
+}

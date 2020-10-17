@@ -7,9 +7,9 @@ import './index.css';
 import AppRoute from './router';
 
 ReactDOM.render(
-    <Router>
-        <AppRoute />
-    </Router>, document.getElementById('root')
+<Router>
+    <AppRoute />
+</Router>, document.getElementById('root')
 );
 
 serviceWorker.register();

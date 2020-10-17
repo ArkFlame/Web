@@ -1,0 +1,97 @@
+@font-face {
+    font-family: mc;
+    src: url(../assets/fonts/mc.woff2);
+    font-display: swap
+}
+
+.join-placeholder {
+    padding: 50px;
+    user-select: none;
+}
+
+.mc-button {
+    font-family: mc;
+    background: url(../assets/mc-button.webp);
+    width: 400px;
+    height: 40px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    line-height: 43px;
+    font-size: 14px;
+    font-weight: 400;
+    text-shadow: 2px 2px 0 #383838;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.mc-button:hover {
+    background-position-y: 40px;
+    color: rgb(247, 255, 133);
+}
+
+.join-ip {
+    font-family: mc;
+    position: relative;
+    width: 368px;
+    height: 40px;
+    padding: 0 14px;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 2px solid #a0a0a0;
+    background: #000;
+    font-size: 15px;
+    color: #fff;
+    line-height: 42px;
+}
+
+@media screen and (max-width: 768px) {
+    .mc-button {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .join-ip {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .join-ip {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .join-placeholder {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .mc-button {
+        width: 90%;
+    }
+
+    .join-ip {
+        font-size: 13px;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 323px) {
+
+    .join-ip {
+        font-size: 12px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .join-ip {
+        font-size: 10px;
+        width: 100%;
+    }
+}

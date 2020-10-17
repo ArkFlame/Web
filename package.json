@@ -1,16 +1,26 @@
 {
-  "name": "arkflame-webclient",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@yisheng90/react-loading": "^1.0.4",
+    "bootstrap": "^4.4.1",
+    "browserify": "^16.5.1",
+    "net": "^1.0.2",
+    "normalize.css": "^8.0.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-markdown": "^4.3.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1"
   },
   "scripts": {
+    "singlePath": "rc-autocomplete --src 'node_modules/react-toolbox/components/**/*.js'",
+    "generate": "rc-autocomplete",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-autocomplete-cli": "0.0.3"
   }
 }
