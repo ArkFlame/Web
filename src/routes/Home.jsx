@@ -77,7 +77,7 @@ export default class Home extends Component {
                 <div className="space" />
                 <div className="space" />
                 <div className="space" />
-                <div className="join-placeholder" style={{ backgroundImage:`url(${tierra})` }}>
+                <div className="join-placeholder" style={{ backgroundImage:`url(${tierra})`, borderRadius:"20px", boxShadow:"0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 8px 0 rgba(0, 0, 0, .19);"}}>
                     <input id="ip" className="join-ip" value="play.arkflame.com" />
                     <div className="mc-button" onClick={copyIP}>Copiar IP</div>
                 </div>

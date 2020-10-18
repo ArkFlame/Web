@@ -1,0 +1,21 @@
+.item {
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    padding: 30px;
+    max-width: 250px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 8px 0 rgba(0, 0, 0, .19);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.item .title {
+    color: #111111;
+    font-size: 30px;
+}
+
+.item .itemImg {
+    width: 180px;
+    border-radius: 08px;
+    margin-bottom: 10px;
+}

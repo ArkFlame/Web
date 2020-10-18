@@ -1,0 +1,17 @@
+.storeTitle {
+    font-size: 40px;
+    font-weight: 650;
+    margin-left: 8px;
+}
+
+.items {
+    margin-left: -40px;
+}
+
+.horizontal li {
+    display: inline;
+}
+
+.vertical li {
+    display: block;
+}
