@@ -1,0 +1,39 @@
+.storeBar {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 8px 0 rgba(0, 0, 0, .19);
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    user-select: none;
+}
+
+.menuList {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+.menuList li {
+    display: inline;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 2px;
+}
+
+.menuList li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.menuList li a:hover {
+    color: #000
+}
+
+.priceIndicator {
+    border-radius: 3px;
+    background: #dddddd;
+    padding: 10px;
+
+}

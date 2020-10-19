@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Item from "./Item";
 import './ItemList.css'
 
-export default class Footer extends Component {
+export default class ItemList extends Component {
 
     render(){
         const { title, children, vertical } = this.props

@@ -56,7 +56,10 @@ export default class Home extends Component {
       return(
         <div>
           <LargeBanner title={"ArkFlame"} subtitle={"Descubre y adáptate a una nueva comunidad para ti."} show={this.state.isLoaded}/>
-          <br /><br />
+          <br />
+          <div className={"frontBanner"}>
+              Únete a <span style={{color: "#fff", fontWeight: 600}}>play.arkflame.com</span>
+          </div>
           <DescriptionSection
             img_opposite_side="https://pbs.twimg.com/media/EPk6xcTWkAMDAqB?format=jpg&name=large"
             icon={users} title={["Comunidad sin", <br />, "límites."]} subtitle={["Puedes jugar cuando quieras, como quieras y donde quieras;",
@@ -77,7 +80,7 @@ export default class Home extends Component {
                 <div className="space" />
                 <div className="space" />
                 <div className="space" />
-                <div className="join-placeholder" style={{ backgroundImage:`url(${tierra})`, borderRadius:"20px", boxShadow:"0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 8px 0 rgba(0, 0, 0, .19);"}}>
+                <div className="join-placeholder" style={{ backgroundImage:`url(${tierra})`}}>
                     <input id="ip" className="join-ip" value="play.arkflame.com" />
                     <div className="mc-button" onClick={copyIP}>Copiar IP</div>
                 </div>

@@ -7,3 +7,26 @@ body {
   justify-content: center;
   padding: 20px;
 }
+
+.join-placeholder {
+  border-radius: 20px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 8px 0 rgba(0, 0, 0, .19);
+}
+
+.defaultPanel {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 8px 0 rgba(0, 0, 0, .19);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.frontBanner {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 8px 0 rgba(0, 0, 0, .19);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  background: #be3d3d;
+  color: #ddd;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}

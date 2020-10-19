@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 .main-title {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     color: #fff;
+    user-select: none;
     background-size: cover;
     background: #000 url(../assets/bg2.webp) bottom;
     text-align: center;
