@@ -10,7 +10,7 @@ export default class ItemList extends Component {
         const { title, children, vertical } = this.props
         return(
             <div>
-                <span class="storeTitle">{title}</span>
+                <span className="storeTitle">{title}</span>
                 <div className="space" />
                 <ul className={vertical ? "items vertical" : "items horizontal"}>
                     {children}

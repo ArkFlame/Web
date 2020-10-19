@@ -5,11 +5,19 @@ import LargeBanner from "../components/LargeBanner";
 import ItemList from "../components/ItemList";
 import Item from "../components/Item";
 import StoreBar from "../components/StoreBar";
+import LargeDescriptionSection from "../components/LargeDescriptionSection";
 
 export default class Store extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            storeItems: null
+        }
+    }
+
     componentDidMount() {
-        fetch("STORE_ITEMS_BACKEND_LINK", {
+        fetch("http://localhost/aaaaa.json", {
             method: "GET",
             headers: {
                 'Access-Control-Allow-Origin': '*',
@@ -34,12 +42,18 @@ export default class Store extends Component {
         )
     }
 
+    renderStoreBar() {
+        if(this.state.storeItems != null) return <StoreBar categories={this.state.storeItems} />
+        else return <div></div>
+    }
+
     render() {
+        if(this.state.storeItems != null)
         return(
             <div>
                 <LargeBanner title={"Tienda"} subtitle="" show={true}/>
                 <br />
-                <StoreBar />
+                {this.renderStoreBar()}
                 <br />
                 <ItemList vertical={false} title="Los más comprados">
                     <Item />
@@ -53,6 +67,13 @@ export default class Store extends Component {
                     <Item />
                     <Item />
                 </ItemList>
+            </div>
+        )
+        else return (
+            <div>
+                <LargeBanner title={"Tienda"} subtitle={""} show={true} />
+                <br />
+                <LargeDescriptionSection title={"Ups..."} subtitle={"Ocurrió un error. Contactanos mediante Discord."} show={true} />
             </div>
         )
     }

@@ -8,7 +8,7 @@ export default class Store extends Component {
     render() {
         const { title, subtitle, image } = this.props
         return(
-            <div class="item">
+            <div className="item">
                 <img src={image} className={"itemImg"} /><br />
                 <span className="subtitle">{title}</span><br />
                 <span className="desc-subtitle2">{subtitle}</span>
