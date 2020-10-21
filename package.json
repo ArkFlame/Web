@@ -16,7 +16,7 @@
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^3.4.4"
   },
   "scripts": {
     "singlePath": "rc-autocomplete --src 'node_modules/react-toolbox/components/**/*.js'",
