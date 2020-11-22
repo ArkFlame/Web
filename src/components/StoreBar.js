@@ -10,8 +10,8 @@ export default class StoreBar extends Component {
             <div className={"storeBar"}>
                 <ul className={"menuList"}>
                     {
-                        JSON.parse(categories).map((key, category) => (
-                            <li><Link to={"/tienda/" + category.id}>{category.name}</Link></li>
+                        categories.map((category, key) => (
+                            <li key={key}><Link to={"/tienda/" + category}>{category}</Link></li>
                         ))
                     }
                     <li>

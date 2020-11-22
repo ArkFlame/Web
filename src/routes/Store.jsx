@@ -17,7 +17,7 @@ export default class Store extends Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost/aaaaa.json", {
+        fetch("http://66.70.179.171:6546/products", {
             method: "GET",
             headers: {
                 'Access-Control-Allow-Origin': '*',
@@ -26,8 +26,19 @@ export default class Store extends Component {
         }).then(res => {
             return res.json()
         }).then(json => {
+
+            let categoryProducts = new Map()
+
+            json.map((product, key) => {
+                if (!categoryProducts.has(product.category)) {
+                    categoryProducts.set(product.category, []);
+                }
+
+                categoryProducts.get(product.category).push(product);
+            })
+
             this.setState({
-                storeItems: json
+                storeItems: categoryProducts
             })
         })
     }
@@ -42,9 +53,9 @@ export default class Store extends Component {
         )
     }
 
-    renderStoreBar() {
-        if(this.state.storeItems != null) return <StoreBar categories={this.state.storeItems} />
-        else return <div></div>
+    renderStoreBar(categories) {
+        if(this.state.storeItems != null) return <StoreBar categories={Array.from(categories.keys())} />
+        else return <div />
     }
 
     render() {
@@ -53,7 +64,7 @@ export default class Store extends Component {
             <div>
                 <LargeBanner title={"Tienda"} subtitle="" show={true}/>
                 <br />
-                {this.renderStoreBar()}
+                {this.renderStoreBar(this.state.storeItems)}
                 <br />
                 <ItemList vertical={false} title="Los más comprados">
                     <Item />
