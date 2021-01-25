@@ -8,10 +8,11 @@
     margin-left: -40px;
 }
 
-.horizontal li {
-    display: inline;
+.horizontal .item {
+    display: inline-block;
 }
 
-.vertical li {
+.vertical .item {
     display: block;
+    max-width: 999999px;
 }
